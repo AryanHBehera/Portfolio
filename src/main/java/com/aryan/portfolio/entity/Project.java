@@ -1,10 +1,6 @@
 package com.aryan.portfolio.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "project")
@@ -18,6 +14,7 @@ public class Project {
     private String description;
     private String techStack;
     private String githubUrl;
+
 
     // ---- Getters and Setters ----
 
