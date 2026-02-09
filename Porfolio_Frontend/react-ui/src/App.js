@@ -1,12 +1,24 @@
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Journey from "./components/Journey";
 import ProjectList from "./components/ProjectList";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <>
       <Navbar />
-      <ProjectList />
-    </div>
+      <div className="pt-20">
+        <Hero />
+        <About />
+        <Skills />
+        <Journey />
+        <ProjectList />
+        <Footer />
+      </div>
+    </>
   );
 }
 
